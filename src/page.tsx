@@ -1,22 +1,22 @@
 import React from "react";
 import Grid from "./components/Grid";
-import Button from "./components/Button";
+import Slot from "./components/Slot";
 
 export default function Page() {
-  const generateButtons = () => {
-    const buttons = [];
+  const generateSlots = () => {
+    const slots = [];
     for (let i = 1; i <= 16; i++) {
-      buttons.push(<Button text={i.toString()} />);
+      slots.push(<Slot text={i.toString()} key={i} />);
     }
-    return buttons;
+    return slots;
   };
 
-  const buttons = generateButtons();
+  const slots = generateSlots();
 
   return (
     <div className="container">
       <Grid rows={4} columns={4}>
-        {buttons}
+        {slots}
       </Grid>
     </div>
   );

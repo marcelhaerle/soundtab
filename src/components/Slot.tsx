@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Button.css";
+import "./Slot.css";
 import { toAny } from "file-to-any";
 
-export default function Button({ text }: { text: string }) {
+export default function Slot({ text }: { text: string }) {
   const ref = useRef(null);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -69,7 +69,7 @@ export default function Button({ text }: { text: string }) {
 
   return (
     <div
-      className={`button ${active ? "active" : ""} ${playing ? "playing" : ""}`}
+      className={`slot ${active ? "active" : ""} ${playing ? "playing" : ""}`}
       ref={ref}
       onClick={handleClick}
     >
