@@ -1,17 +1,18 @@
 import React from "react";
 import "./Grid.css";
+import { Layout } from "../preload";
 
 export default function Grid({
+  layout,
   children,
-  rows,
-  columns,
 }: {
+  layout: Layout;
   children: JSX.Element[];
-  rows: number;
-  columns: number;
 }) {
   return (
-    <div className={`grid grid-rows-${rows} grid-columns-${columns}`}>
+    <div
+      className={`grid grid-rows-${layout.rows} grid-columns-${layout.columns}`}
+    >
       {children}
     </div>
   );

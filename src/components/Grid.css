@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: linear-gradient(119.98304527949507deg, #476072, #2B2B2B);
+  background-image: linear-gradient(119.98304527949507deg, #476072, #2b2b2b);
 }
 
 .grid-rows-2 {
@@ -26,6 +26,18 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.grid-rows-7 {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-rows-8 {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-rows-9 {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .grid-columns-2 {
   grid-template-columns: 1fr 1fr;
 }
@@ -44,4 +56,16 @@
 
 .grid-columns-6 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-7 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-8 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-9 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
